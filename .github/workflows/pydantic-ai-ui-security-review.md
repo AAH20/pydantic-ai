@@ -45,7 +45,7 @@ permissions:
 concurrency:
   # One security review per PR; newer pushes supersede in-flight reviews.
   group: ${{ github.workflow }}-ui-security-review-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 tools:
   github:
     mode: gh-proxy
