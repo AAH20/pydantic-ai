@@ -9,7 +9,7 @@ permissions:
   pull-requests: read
 concurrency:
   group: ${{ github.workflow }}-regression-detector
-  cancel-in-progress: true
+  cancel-in-progress: false
 tools:
   github:
     mode: gh-proxy
