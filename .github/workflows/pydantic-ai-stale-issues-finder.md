@@ -15,7 +15,7 @@ checkout:
   fetch-depth: 0
 concurrency:
   group: ${{ github.workflow }}-stale-issues-finder
-  cancel-in-progress: true
+  cancel-in-progress: false
 network:
   allowed:
     - defaults
