@@ -9,7 +9,7 @@ permissions:
   pull-requests: read
 concurrency:
   group: ${{ github.workflow }}-docs-drift
-  cancel-in-progress: true
+  cancel-in-progress: false
 tools:
   github:
     mode: gh-proxy
