@@ -47,7 +47,7 @@ concurrency:
   # and a CI re-run of one head still supersedes an in-flight review of it, which
   # is the one cancellation worth keeping.
   group: ${{ github.workflow }}-${{ github.event.workflow_run.head_branch || github.ref }}-${{ github.event.workflow_run.head_sha }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 # Deterministic, pre-inference gate: unless `eligibility` says so, no model runs.
 #
 # `eligibility` MUST also be referenced from the prompt body below. gh-aw copies
